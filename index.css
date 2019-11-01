@@ -33,6 +33,7 @@ h3::after{
 span{
     font-size: 50px;
     font-family: monospace;
+    opacity: 0;
     animation: animate 2.4s ease-in-out infinite alternate;
 }
 span:nth-of-type(1){
