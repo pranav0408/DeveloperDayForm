@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <title>Developer Day</title>
 </head>
-<body>
+<body onload="stop()">
     
     <div class="header">
 
@@ -29,6 +29,10 @@
         <h3>Fill the form to complete your registration</h3>
     </div>
 
+    <div class="loader">
+
+    </div>
+
     <div class="content">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZUAA7whv_62wgaVM_tziWDRCNYj-H6mrYqRE3sFdz0hnCoA/viewform?embedded=true" 
                 frameborder="0" 
@@ -38,6 +42,12 @@
                     <h4>The problem might be your browser does not supports iframe.</h4>
         </iframe>
     </div>
+
+    <script>
+        const stop = () => {
+            document.querySelector('.loader').style.display = "none"
+        }
+    </script>
 
 </body>
 </html>

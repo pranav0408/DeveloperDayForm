@@ -79,3 +79,26 @@ span:nth-of-type(12){
         opacity: 1;
     }
 }
+
+.loader::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-top: 4px solid cornflowerblue;
+    border-left: 4px solid cornflowerblue;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+}
+@keyframes loader{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
