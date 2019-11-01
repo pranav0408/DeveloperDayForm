@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>Developer Day</title>
+</head>
+<body onload="stop()">
+    
+    <div class="header">
+
+        <div class="heading">
+            <span>D</span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+            <span>L</span>
+            <span>O</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+            <br>
+            <span>D</span>
+            <span>A</span>
+            <span>Y</span>
+        </div>
+        <h3>Fill the form to complete your registration</h3>
+    </div>
+
+    <div class="loader">
+
+    </div>
+
+    <div class="content">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHWoPfIYiyFQ5KuZ0MwK8X6tS_QkqKpOyp2q2OE90pX-Bf1w/viewform?embedded=true" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                    <h3>Oops. There was some error in loading the form.</h3>
+                    <h4>The problem might be your browser does not supports iframe.</h4>
+        </iframe>
+    </div>
+
+    <script>
+        const stop = () => {
+            document.querySelector('.loader').style.display = "none"
+        }
+    </script>
+
+</body>
+</html>
