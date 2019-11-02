@@ -94,6 +94,10 @@ span:nth-of-type(12){
 li{
     margin: 10px;
 }
+#QR{
+    width: 200px;
+    height: auto;
+}
 .loader::before{
     content: "";
     width: 100px;
